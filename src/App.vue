@@ -1,6 +1,10 @@
 <template>
     <h1>List of Friends</h1>
-    <friend-contact></friend-contact>
+    <friend-contact 
+        v-for="friend in friends" 
+        :key="friend.id"
+        :friend="friend"
+    ></friend-contact>
 </template>
 
 <script>
