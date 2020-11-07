@@ -6,6 +6,7 @@
         :key="friend.id"
         :friend="friend"
         @toggle-favourite="toggleFavouriteStatus"
+        @delete-contact="deleteContact"
     ></friend-contact>
 </template>
 
@@ -45,6 +46,9 @@ export default {
                 isFavourite: false
             }
             this.friends.push(newFriend);
+        },
+        deleteContact(id) {
+            this.friends = this.friends.filter( friend => friend.id !== id );
         }
     }
 }
