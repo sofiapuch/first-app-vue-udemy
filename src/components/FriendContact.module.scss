@@ -1,0 +1,23 @@
+.friendContact {
+    border: 2px solid #cacaca;
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__button {
+        background-color:  rgb(38, 180, 38);
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 500;
+        padding: 10px 30px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <template>
-    <h2>List of Friends</h2>
+    <h1>List of Friends</h1>
     <friend-contact></friend-contact>
 </template>
 
@@ -25,3 +25,7 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+@use './App.scss';
+</style>
