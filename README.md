@@ -1,4 +1,5 @@
 # first-app-vue-udemy
+Vue.js app practice following Udemy course
 
 ## Project setup
 ```
