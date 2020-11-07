@@ -1,5 +1,6 @@
 <template>
     <h1>List of Friends</h1>
+    <new-friend @add-contact="addContact"></new-friend>
     <friend-contact 
         v-for="friend in friends" 
         :key="friend.id"
@@ -34,6 +35,16 @@ export default {
         toggleFavouriteStatus(friendId) {
             const friendFound = this.friends.find( friend => friend.id === friendId);
             friendFound.isFavourite = !friendFound.isFavourite;
+        },
+        addContact(contact) {
+            const newFriend = {
+                id: new Date().toISOString(),
+                name: contact.name,
+                phone: contact.phone,
+                email: contact.email,
+                isFavourite: false
+            }
+            this.friends.push(newFriend);
         }
     }
 }

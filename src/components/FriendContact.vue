@@ -25,6 +25,7 @@ export default {
     props: {
         friend: Object
     },
+    emits: ['toggle-favourite'],
     data() {
         return {
             detailsAreVisible: false
